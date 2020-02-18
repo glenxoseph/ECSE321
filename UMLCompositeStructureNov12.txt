@@ -1,0 +1,102 @@
+class GUI {
+    public in Integer guiIn;
+    public out Integer guiOut;
+}
+
+class FrontendData {
+    public in Integer fdIn;
+    public out Integer fdOut;
+}
+
+class WebFrontend {
+
+  GUI subcmp1;
+  FrontendData subcmp2;
+  
+  public in Integer pIn1;
+  public out Integer pOut1;
+  pIn1 -> pOut1;
+  
+}
+
+class AndroidFrontend {
+  
+  public in Integer pIn2;
+  public out Integer pOut2;
+  pIn2 -> pOut2;
+  
+}
+
+
+class Frontend {
+  
+WebFrontend cmp1;
+AndroidFrontend cmp2;
+Integer startValue;
+
+  after constructor {
+     cmp1->pIn1(startValue);
+     
+  }
+
+
+  cmp1.pOut1 -> cmp2.pIn2;
+  cmp2.pOut2 -> cmp1.pIn1;
+}
+
+class TutorCtrl {
+    public in Integer tcIn;
+    public out Integer tcOut;
+}
+
+class TutorService {
+    public in Integer tsIn;
+    public out Integer tsOut;
+}
+
+class TutorManagement {
+
+   TutorCtrl subcmp3;
+   TutorService subcmp4;
+  
+  public in Integer pIn1;
+  public out Integer pOut1;
+  pIn1 -> pOut1;
+  
+}
+
+class SessionManagement {
+  
+  public in Integer pIn2;
+  public out Integer pOut2;
+  pIn2 -> pOut2;
+  
+}
+
+class Backend {
+  
+  public in Integer bIn;
+  public in Integer bOut;
+  
+  TutorManagement cmp3;
+  SessionManagement cmp4;
+  
+}
+
+class BusinessEntities {
+  
+  public in Integer beIn;
+  public out Integer beOut;
+  
+}
+
+class Storage {
+    public in Integer sIn;
+    public out Integer sOut;
+}
+
+class Persistence {
+  BusinessEntities cmp5;
+  Storage cmp6;
+}
+

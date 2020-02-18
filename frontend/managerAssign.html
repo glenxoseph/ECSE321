@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student Tutoring Service</title>
+		<link rel="stylesheet" href="managerAssign.css">
+	</head>
+	<body>
+		<div class="sidenav">
+			<div id="navContent">
+				<img id="userimg" src="ben.jpg" alt="Profile Image">
+				<h3 id="username">benjaminweiss46</h3>
+				<div id="links">
+					<a href="#"><b>All Sessions</b></a><br>
+					<a href="#"><b>All Tutors</b></a><br>
+					<a href="#"><b>All Students</b></a><br>
+					<a href="#"><b>All Evaluations</b></a>
+				</div>
+			</div>
+			<img id="logo" src="blueLogo.png" alt="Logo" style="width:50px;height:50px;">
+		</div>
+		<div class="main">
+			<h1 id="Sessionid">Review Session #184183</h1>
+			<table style="width:100%">
+			  <tr>
+			    <td><button class="item" type="button">Course</button></td>
+			    <td><button class="item" type="button">Students</button></td>
+			  </tr>
+			</table>
+			<h2 id="searchTutor">Search for Tutor</h2>
+			<form>
+				<input name="Search" type="text">
+			</form>
+			<h2>Assign Time & Room</h2>
+			<table style="width:100%">
+			  <tr>
+			    <td><input list="date" name="date" value="Nov 15th"></td>
+				<td><input list="time" name="time" value="9:00am"></td>
+				<td><input list="room" name="room" value="1101"></td>
+			  </tr>
+			</table>
+			<datalist id="date">
+			 	<option value="Nov 12"></option>
+				<option value="Nov 13"></option>
+				<option value="Nov 14"></option>
+			</datalist>
+			<datalist id="room">
+			 	<option value="1101"></option>
+				<option value="1102"></option>
+				<option value="1103"></option>
+			</datalist>
+			<datalist id="time">
+			 	<option value="9:00"></option>
+				<option value="9:30"></option>
+				<option value="10:00"></option>
+			</datalist>
+			<div id="cButton">
+			<button id="confirm" type="button"><b>Confirm</b></button>
+			</div>
+		</div>
+	</body>
+</html>

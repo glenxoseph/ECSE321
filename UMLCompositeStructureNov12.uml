@@ -1,0 +1,1474 @@
+// UML Text
+package ;
+  import ::dataType;
+  package dataType;
+    primitive String;
+    primitive Integer;
+    primitive Double;
+    primitive Date;
+    primitive Time;
+    primitive Boolean;
+  end;
+
+  class GUI
+  end;
+
+  class FrontendData
+  end;
+
+  class WebFrontend
+    attribute subcmp1 : GUI;
+    attribute subcmp2 : FrontendData;
+  end;
+
+  class AndroidFrontend
+  end;
+
+  class Frontend
+    attribute cmp1 : WebFrontend;
+    attribute cmp2 : AndroidFrontend;
+    attribute startValue : Integer;
+  end;
+
+  class TutorCtrl
+  end;
+
+  class TutorService
+  end;
+
+  class TutorManagement
+    attribute subcmp3 : TutorCtrl;
+    attribute subcmp4 : TutorService;
+  end;
+
+  class SessionManagement
+  end;
+
+  class Backend
+    attribute cmp3 : TutorManagement;
+    attribute cmp4 : SessionManagement;
+  end;
+
+  class BusinessEntities
+  end;
+
+  class Storage
+  end;
+
+  class Persistence
+    attribute cmp5 : BusinessEntities;
+    attribute cmp6 : Storage;
+  end;
+
+end.
+
+// XML
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_model" name="model">
+  <packageImport xmi:id="_packageImport.0">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Model" xmi:id="dataType" name="dataType">
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="dataType-Time" name="Time"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GUI" name="GUI">
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FrontendData" name="FrontendData">
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WebFrontend" name="WebFrontend">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WebFrontend-subcmp1-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WebFrontend-subcmp1-_lowerValue" value="1"/>
+    </ownedAttribute>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WebFrontend-subcmp2-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WebFrontend-subcmp2-_lowerValue" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AndroidFrontend" name="AndroidFrontend">
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Frontend" name="Frontend">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Frontend-cmp1-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Frontend-cmp1-_lowerValue" value="1"/>
+    </ownedAttribute>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Frontend-cmp2-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Frontend-cmp2-_lowerValue" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Frontend-startValue" name="startValue" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Frontend-startValue-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Frontend-startValue-_lowerValue" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TutorCtrl" name="TutorCtrl">
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TutorService" name="TutorService">
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TutorManagement" name="TutorManagement">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TutorManagement-subcmp3-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TutorManagement-subcmp3-_lowerValue" value="1"/>
+    </ownedAttribute>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TutorManagement-subcmp4-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TutorManagement-subcmp4-_lowerValue" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SessionManagement" name="SessionManagement">
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Backend" name="Backend">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Backend-cmp3-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Backend-cmp3-_lowerValue" value="1"/>
+    </ownedAttribute>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Backend-cmp4-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Backend-cmp4-_lowerValue" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BusinessEntities" name="BusinessEntities">
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Storage" name="Storage">
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Persistence" name="Persistence">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Persistence-cmp5-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Persistence-cmp5-_lowerValue" value="1"/>
+    </ownedAttribute>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Persistence-cmp6-_upperValue" value="1"/>
+      <lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Persistence-cmp6-_lowerValue" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <profileApplication xmi:id="_profileApplication.0">
+    <eAnnotations xmi:id="_eAnnotations.0" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/schemas/Standard/1#/"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>
+
+// PHP Generated Code
+//%% NEW FILE TutorCtrl BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class TutorCtrl
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE FrontendData BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class FrontendData
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE WebFrontend BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class WebFrontend
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //WebFrontend Attributes
+  private $subcmp1;
+  private $subcmp2;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct($aSubcmp1, $aSubcmp2)
+  {
+    $this->subcmp1 = $aSubcmp1;
+    $this->subcmp2 = $aSubcmp2;
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function setSubcmp1($aSubcmp1)
+  {
+    $wasSet = false;
+    $this->subcmp1 = $aSubcmp1;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function setSubcmp2($aSubcmp2)
+  {
+    $wasSet = false;
+    $this->subcmp2 = $aSubcmp2;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function getSubcmp1()
+  {
+    return $this->subcmp1;
+  }
+
+  public function getSubcmp2()
+  {
+    return $this->subcmp2;
+  }
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE Persistence BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class Persistence
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //Persistence Attributes
+  private $cmp5;
+  private $cmp6;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct($aCmp5, $aCmp6)
+  {
+    $this->cmp5 = $aCmp5;
+    $this->cmp6 = $aCmp6;
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function setCmp5($aCmp5)
+  {
+    $wasSet = false;
+    $this->cmp5 = $aCmp5;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function setCmp6($aCmp6)
+  {
+    $wasSet = false;
+    $this->cmp6 = $aCmp6;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function getCmp5()
+  {
+    return $this->cmp5;
+  }
+
+  public function getCmp6()
+  {
+    return $this->cmp6;
+  }
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE Backend BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class Backend
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //Backend Attributes
+  private $cmp3;
+  private $cmp4;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct($aCmp3, $aCmp4)
+  {
+    $this->cmp3 = $aCmp3;
+    $this->cmp4 = $aCmp4;
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function setCmp3($aCmp3)
+  {
+    $wasSet = false;
+    $this->cmp3 = $aCmp3;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function setCmp4($aCmp4)
+  {
+    $wasSet = false;
+    $this->cmp4 = $aCmp4;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function getCmp3()
+  {
+    return $this->cmp3;
+  }
+
+  public function getCmp4()
+  {
+    return $this->cmp4;
+  }
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE Storage BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class Storage
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE Frontend BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class Frontend
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //Frontend Attributes
+  private $cmp1;
+  private $cmp2;
+  private $startValue;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct($aCmp1, $aCmp2, $aStartValue)
+  {
+    $this->cmp1 = $aCmp1;
+    $this->cmp2 = $aCmp2;
+    $this->startValue = $aStartValue;
+    // line 42 "model.ump"
+    cmp1->pIn1(startValue);
+    // END OF UMPLE AFTER INJECTION
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function setCmp1($aCmp1)
+  {
+    $wasSet = false;
+    $this->cmp1 = $aCmp1;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function setCmp2($aCmp2)
+  {
+    $wasSet = false;
+    $this->cmp2 = $aCmp2;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function setStartValue($aStartValue)
+  {
+    $wasSet = false;
+    $this->startValue = $aStartValue;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function getCmp1()
+  {
+    return $this->cmp1;
+  }
+
+  public function getCmp2()
+  {
+    return $this->cmp2;
+  }
+
+  public function getStartValue()
+  {
+    return $this->startValue;
+  }
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE TutorManagement BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class TutorManagement
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //TutorManagement Attributes
+  private $subcmp3;
+  private $subcmp4;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct($aSubcmp3, $aSubcmp4)
+  {
+    $this->subcmp3 = $aSubcmp3;
+    $this->subcmp4 = $aSubcmp4;
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function setSubcmp3($aSubcmp3)
+  {
+    $wasSet = false;
+    $this->subcmp3 = $aSubcmp3;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function setSubcmp4($aSubcmp4)
+  {
+    $wasSet = false;
+    $this->subcmp4 = $aSubcmp4;
+    $wasSet = true;
+    return $wasSet;
+  }
+
+  public function getSubcmp3()
+  {
+    return $this->subcmp3;
+  }
+
+  public function getSubcmp4()
+  {
+    return $this->subcmp4;
+  }
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE AndroidFrontend BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+/*
+@@@testlanguage=none
+*/
+class AndroidFrontend
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE GUI BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+// Example system representing constraint-based ping-pong example
+// Demonstrates the composite Structure Diagram in Umple
+class GUI
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE TutorService BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class TutorService
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE SessionManagement BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class SessionManagement
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+
+
+
+
+//%% NEW FILE BusinessEntities BEGINS HERE %%
+
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+class BusinessEntities
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public function __construct()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public function equals($compareTo)
+  {
+    return $this == $compareTo;
+  }
+
+  public function delete()
+  {}
+
+}
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+// Java generated code
+
+//%% NEW FILE TutorCtrl BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 48 "model.ump"
+// line 138 "model.ump"
+public class TutorCtrl
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public TutorCtrl()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public void delete()
+  {}
+
+}
+
+
+
+//%% NEW FILE FrontendData BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 7 "model.ump"
+// line 118 "model.ump"
+public class FrontendData
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public FrontendData()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public void delete()
+  {}
+
+}
+
+
+
+//%% NEW FILE WebFrontend BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 12 "model.ump"
+// line 123 "model.ump"
+public class WebFrontend
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //WebFrontend Attributes
+  private GUI subcmp1;
+  private FrontendData subcmp2;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public WebFrontend(GUI aSubcmp1, FrontendData aSubcmp2)
+  {
+    subcmp1 = aSubcmp1;
+    subcmp2 = aSubcmp2;
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public boolean setSubcmp1(GUI aSubcmp1)
+  {
+    boolean wasSet = false;
+    subcmp1 = aSubcmp1;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public boolean setSubcmp2(FrontendData aSubcmp2)
+  {
+    boolean wasSet = false;
+    subcmp2 = aSubcmp2;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public GUI getSubcmp1()
+  {
+    return subcmp1;
+  }
+
+  public FrontendData getSubcmp2()
+  {
+    return subcmp2;
+  }
+
+  public void delete()
+  {}
+
+
+  public String toString()
+  {
+    return super.toString() + "["+ "]" + System.getProperties().getProperty("line.separator") +
+            "  " + "subcmp1" + "=" + (getSubcmp1() != null ? !getSubcmp1().equals(this)  ? getSubcmp1().toString().replaceAll("  ","    ") : "this" : "null") + System.getProperties().getProperty("line.separator") +
+            "  " + "subcmp2" + "=" + (getSubcmp2() != null ? !getSubcmp2().equals(this)  ? getSubcmp2().toString().replaceAll("  ","    ") : "this" : "null");
+  }
+}
+
+
+
+//%% NEW FILE Persistence BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 99 "model.ump"
+// line 173 "model.ump"
+public class Persistence
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //Persistence Attributes
+  private BusinessEntities cmp5;
+  private Storage cmp6;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public Persistence(BusinessEntities aCmp5, Storage aCmp6)
+  {
+    cmp5 = aCmp5;
+    cmp6 = aCmp6;
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public boolean setCmp5(BusinessEntities aCmp5)
+  {
+    boolean wasSet = false;
+    cmp5 = aCmp5;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public boolean setCmp6(Storage aCmp6)
+  {
+    boolean wasSet = false;
+    cmp6 = aCmp6;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public BusinessEntities getCmp5()
+  {
+    return cmp5;
+  }
+
+  public Storage getCmp6()
+  {
+    return cmp6;
+  }
+
+  public void delete()
+  {}
+
+
+  public String toString()
+  {
+    return super.toString() + "["+ "]" + System.getProperties().getProperty("line.separator") +
+            "  " + "cmp5" + "=" + (getCmp5() != null ? !getCmp5().equals(this)  ? getCmp5().toString().replaceAll("  ","    ") : "this" : "null") + System.getProperties().getProperty("line.separator") +
+            "  " + "cmp6" + "=" + (getCmp6() != null ? !getCmp6().equals(this)  ? getCmp6().toString().replaceAll("  ","    ") : "this" : "null");
+  }
+}
+
+
+
+//%% NEW FILE Backend BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 77 "model.ump"
+// line 158 "model.ump"
+public class Backend
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //Backend Attributes
+  private TutorManagement cmp3;
+  private SessionManagement cmp4;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public Backend(TutorManagement aCmp3, SessionManagement aCmp4)
+  {
+    cmp3 = aCmp3;
+    cmp4 = aCmp4;
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public boolean setCmp3(TutorManagement aCmp3)
+  {
+    boolean wasSet = false;
+    cmp3 = aCmp3;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public boolean setCmp4(SessionManagement aCmp4)
+  {
+    boolean wasSet = false;
+    cmp4 = aCmp4;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public TutorManagement getCmp3()
+  {
+    return cmp3;
+  }
+
+  public SessionManagement getCmp4()
+  {
+    return cmp4;
+  }
+
+  public void delete()
+  {}
+
+
+  public String toString()
+  {
+    return super.toString() + "["+ "]" + System.getProperties().getProperty("line.separator") +
+            "  " + "cmp3" + "=" + (getCmp3() != null ? !getCmp3().equals(this)  ? getCmp3().toString().replaceAll("  ","    ") : "this" : "null") + System.getProperties().getProperty("line.separator") +
+            "  " + "cmp4" + "=" + (getCmp4() != null ? !getCmp4().equals(this)  ? getCmp4().toString().replaceAll("  ","    ") : "this" : "null");
+  }
+}
+
+
+
+//%% NEW FILE Storage BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 94 "model.ump"
+// line 168 "model.ump"
+public class Storage
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public Storage()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public void delete()
+  {}
+
+}
+
+
+
+//%% NEW FILE Frontend BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 32 "model.ump"
+// line 133 "model.ump"
+public class Frontend
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //Frontend Attributes
+  private WebFrontend cmp1;
+  private AndroidFrontend cmp2;
+  private int startValue;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public Frontend(WebFrontend aCmp1, AndroidFrontend aCmp2, int aStartValue)
+  {
+    cmp1 = aCmp1;
+    cmp2 = aCmp2;
+    startValue = aStartValue;
+    // line 39 "model.ump"
+    cmp1->pIn1(startValue);
+    // END OF UMPLE AFTER INJECTION
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public boolean setCmp1(WebFrontend aCmp1)
+  {
+    boolean wasSet = false;
+    cmp1 = aCmp1;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public boolean setCmp2(AndroidFrontend aCmp2)
+  {
+    boolean wasSet = false;
+    cmp2 = aCmp2;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public boolean setStartValue(int aStartValue)
+  {
+    boolean wasSet = false;
+    startValue = aStartValue;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public WebFrontend getCmp1()
+  {
+    return cmp1;
+  }
+
+  public AndroidFrontend getCmp2()
+  {
+    return cmp2;
+  }
+
+  public int getStartValue()
+  {
+    return startValue;
+  }
+
+  public void delete()
+  {}
+
+
+  public String toString()
+  {
+    return super.toString() + "["+
+            "startValue" + ":" + getStartValue()+ "]" + System.getProperties().getProperty("line.separator") +
+            "  " + "cmp1" + "=" + (getCmp1() != null ? !getCmp1().equals(this)  ? getCmp1().toString().replaceAll("  ","    ") : "this" : "null") + System.getProperties().getProperty("line.separator") +
+            "  " + "cmp2" + "=" + (getCmp2() != null ? !getCmp2().equals(this)  ? getCmp2().toString().replaceAll("  ","    ") : "this" : "null");
+  }
+}
+
+
+
+//%% NEW FILE TutorManagement BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 58 "model.ump"
+// line 148 "model.ump"
+public class TutorManagement
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //TutorManagement Attributes
+  private TutorCtrl subcmp3;
+  private TutorService subcmp4;
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public TutorManagement(TutorCtrl aSubcmp3, TutorService aSubcmp4)
+  {
+    subcmp3 = aSubcmp3;
+    subcmp4 = aSubcmp4;
+  }
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public boolean setSubcmp3(TutorCtrl aSubcmp3)
+  {
+    boolean wasSet = false;
+    subcmp3 = aSubcmp3;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public boolean setSubcmp4(TutorService aSubcmp4)
+  {
+    boolean wasSet = false;
+    subcmp4 = aSubcmp4;
+    wasSet = true;
+    return wasSet;
+  }
+
+  public TutorCtrl getSubcmp3()
+  {
+    return subcmp3;
+  }
+
+  public TutorService getSubcmp4()
+  {
+    return subcmp4;
+  }
+
+  public void delete()
+  {}
+
+
+  public String toString()
+  {
+    return super.toString() + "["+ "]" + System.getProperties().getProperty("line.separator") +
+            "  " + "subcmp3" + "=" + (getSubcmp3() != null ? !getSubcmp3().equals(this)  ? getSubcmp3().toString().replaceAll("  ","    ") : "this" : "null") + System.getProperties().getProperty("line.separator") +
+            "  " + "subcmp4" + "=" + (getSubcmp4() != null ? !getSubcmp4().equals(this)  ? getSubcmp4().toString().replaceAll("  ","    ") : "this" : "null");
+  }
+}
+
+
+
+//%% NEW FILE AndroidFrontend BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 23 "model.ump"
+// line 128 "model.ump"
+public class AndroidFrontend
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public AndroidFrontend()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public void delete()
+  {}
+
+}
+
+
+
+//%% NEW FILE GUI BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+/**
+ * @@@testlanguage=none
+ */
+// line 2 "model.ump"
+// line 113 "model.ump"
+public class GUI
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public GUI()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public void delete()
+  {}
+
+}
+
+
+
+//%% NEW FILE TutorService BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 53 "model.ump"
+// line 143 "model.ump"
+public class TutorService
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public TutorService()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public void delete()
+  {}
+
+}
+
+
+
+//%% NEW FILE SessionManagement BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 69 "model.ump"
+// line 153 "model.ump"
+public class SessionManagement
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public SessionManagement()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public void delete()
+  {}
+
+}
+
+
+
+//%% NEW FILE BusinessEntities BEGINS HERE %%
+
+/*PLEASE DO NOT EDIT THIS CODE*/
+/*This code was generated using the UMPLE 1.29.1.4751.a6e174619 modeling language!*/
+
+
+
+// line 87 "model.ump"
+// line 163 "model.ump"
+public class BusinessEntities
+{
+
+  //------------------------
+  // MEMBER VARIABLES
+  //------------------------
+
+  //------------------------
+  // CONSTRUCTOR
+  //------------------------
+
+  public BusinessEntities()
+  {}
+
+  //------------------------
+  // INTERFACE
+  //------------------------
+
+  public void delete()
+  {}
+
+}
